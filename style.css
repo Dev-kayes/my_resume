@@ -169,8 +169,8 @@ p {
   padding: 8px 14px;
   border: none;
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.662);
-  color: #ffffffc4;
+  background: rgb(0, 0, 0);
+  color: #fffffffd;
   font-size: 0.95rem;
   font-weight: 700;
   cursor: pointer;
