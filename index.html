@@ -20,50 +20,51 @@
     <title>My Resume</title>
   </head>
   <body id="body">
-    <container id="container">
-      <a class="download-btn" onclick="window.print()">Download PDF</a>
-      <!-- if I want to download -->
+    <div id="container">
+      <button class="download-btn" type="button" onclick="window.print()">
+        Download PDF
+      </button>
+
       <h1>Md.Kayes Molla</h1>
+
       <ul>
-        <li><i class="fa-solid fa-house"></i>Dhaka , BD</li>
-
+        <li><i class="fa-solid fa-house"></i><span>Dhaka, BD</span></li>
         <li>
-          <i class="fa-regular fa-envelope"></i
-          ><a href="devkayesmolla@gmail.com">devkayesmolla@gmail.com</a>
-        </li>
-
-        <li>
-          <i class="fa-brands fa-whatsapp"></i><a href="#">01577598349</a>
+          <i class="fa-regular fa-envelope"></i>
+          <a href="mailto:devkayesmolla@gmail.com">devkayesmolla@gmail.com</a>
         </li>
         <li>
-          <i class="fa-brands fa-weebly"></i
-          ><a href="https://personal-portfolio-website-ashy-two.vercel.app/"
-            >https://personal-portfolio-website-ashy-two.vercel.app/</a
-          >
+          <i class="fa-brands fa-whatsapp"></i>
+          <a href="tel:+8801577598349">01577598349</a>
         </li>
         <li>
-          <i class="fa-brands fa-github"></i
-          ><a href="https://github.com/Dev-kayes"
-            >https://github.com/Dev-kayes</a
-          >
+          <i class="fa-brands fa-weebly"></i>
+          <a href="https://personal-portfolio-website-ashy-two.vercel.app/" target="_blank" rel="noreferrer">
+            https://personal-portfolio-website-ashy-two.vercel.app/
+          </a>
         </li>
         <li>
-          <i class="fa-brands fa-linkedin"></i
-          ><a href="https://www.linkedin.com/in/kayes-molla-dev-0070063b6"
-            >https://www.linkedin.com/in/kayes-molla-dev</a
-          >
+          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/Dev-kayes" target="_blank" rel="noreferrer">https://github.com/Dev-kayes</a>
         </li>
         <li>
-          <i class="fa-brands fa-twitter"></i
-          ><a href="https://x.com/dev_kayes">https://x.com/dev_kayes</a>
+          <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/kayes-molla-dev-0070063b6" target="_blank" rel="noreferrer">
+            https://www.linkedin.com/in/kayes-molla-dev
+          </a>
         </li>
         <li>
-          <i class="fa-brands fa-facebook"></i
-          ><a href="https://www.facebook.com/isCodingNow/"
-            >https://www.facebook.com/isCodingNow/</a
-          >
+          <i class="fa-brands fa-twitter"></i>
+          <a href="https://x.com/dev_kayes" target="_blank" rel="noreferrer">https://x.com/dev_kayes</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-facebook"></i>
+          <a href="https://www.facebook.com/isCodingNow/" target="_blank" rel="noreferrer">
+            https://www.facebook.com/isCodingNow/
+          </a>
         </li>
       </ul>
+
       <div>
         <h2>Professional Summary:</h2>
         <hr />
@@ -76,6 +77,7 @@
           real-world projects and modern web technologies.
         </p>
       </div>
+
       <div>
         <h2>Technical Skills:</h2>
         <hr />
@@ -108,130 +110,124 @@
           </tbody>
         </table>
       </div>
+
       <div>
         <h2>Projects:</h2>
         <hr />
-        <ul>
+
+        <div class="project-group">
           <h4>MERN stack projects:</h4>
-          <li>
+          <div class="project-item">
             <h4>Molla Ecommerce:</h4>
             <p>
-              Tech stacks: HTML, CSS, JS, ES6, Tailwind CSS, React JS,Figma,
-              Node JS, Express JS, Mongo DB, Socket I/O,
+              Tech stacks: HTML, CSS, JS, ES6, Tailwind CSS, React JS, Figma,
+              Node JS, Express JS, Mongo DB, Socket I/O.
             </p>
-            preview:
-            <a id="preview" href="https://ecommerce-project-six-eta.vercel.app/"
-              >https://ecommerce-project-six-eta.vercel.app/</a
-            ><br />
-            Code:<a
-              id="link"
-              href="https://github.com/Dev-kayes/EcommerceProject.git"
-              >https://github.com/Dev-kayes/EcommerceProject.git</a
-            >
-          </li>
-        </ul>
-        <ul>
-          <li><h4>HTML,CSS & JS projects:</h4></li>
-          <li>
-            Kanban project:<a
-              id="preview"
-              href="https://mollakanban.netlify.app/"
-              >https://mollakanban.netlify.app/</a
-            >
-          </li>
-          <li>
-            Tic-Tak-Toe Game:<a
-              id="preview"
-              href="https://jstictactoepractice.netlify.app/"
-              >https://jstictactoepractice.netlify.app/</a
-            >
-          </li>
-          <li>
-            Snake Game:<a
-              id="preview"
-              href="https://6a398a6e6c176527422d21d6--jssnakeegame.netlify.app/"
-              >https://6a398a6e6c176527422d21d6--jssnakeegame.netlify.app/</a
-            >
-          </li>
-          <li>
-            Analogueclock:<a
-              id="preview"
-              href="https://javascriptanalogclocklogic.netlify.app/"
-              >https://javascriptanalogclocklogic.netlify.app/</a
-            >
-          </li>
-        </ul>
+            <div class="project-link-row">
+              <span>Preview:</span>
+              <a id="preview" href="https://ecommerce-project-six-eta.vercel.app/" target="_blank" rel="noreferrer">
+                https://ecommerce-project-six-eta.vercel.app/
+              </a>
+            </div>
+            <div class="project-link-row">
+              <span>Code:</span>
+              <a id="link" href="https://github.com/Dev-kayes/EcommerceProject.git" target="_blank" rel="noreferrer">
+                https://github.com/Dev-kayes/EcommerceProject.git
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-group">
+          <h4>HTML, CSS &amp; JS projects:</h4>
+          <ul class="project-list">
+            <li>Kanban project: <a id="preview" href="https://mollakanban.netlify.app/" target="_blank" rel="noreferrer">https://mollakanban.netlify.app/</a></li>
+            <li>Tic-Tak-Toe Game: <a id="preview" href="https://jstictactoepractice.netlify.app/" target="_blank" rel="noreferrer">https://jstictactoepractice.netlify.app/</a></li>
+            <li>Snake Game: <a id="preview" href="https://6a398a6e6c176527422d21d6--jssnakeegame.netlify.app/" target="_blank" rel="noreferrer">https://6a398a6e6c176527422d21d6--jssnakeegame.netlify.app/</a></li>
+            <li>Analogueclock: <a id="preview" href="https://javascriptanalogclocklogic.netlify.app/" target="_blank" rel="noreferrer">https://javascriptanalogclocklogic.netlify.app/</a></li>
+          </ul>
+        </div>
       </div>
+
       <div>
-        <h2>Training & Certifications:</h2>
+        <h2>Training &amp; Certifications:</h2>
         <hr />
-        <ul>
+        <div class="info-block">
           <h4>MERN Stack Web Development</h4>
-          <li>Company: Creative IT Institute, Dhaka</li>
-          <li>
-            Cover Topics: HTML, CSS, JS, ES6, Bootstrap, Tailwind CSS, React JS,
-            Firebase, Figma, Node JS, Express JS, Mongo DB, Socket I/O,
-            E-commerce Project;
-          </li>
-          <li>Starting Date: 17/12/2023</li>
-          <li>Starting Date: 20/12/2024</li>
-          <li style="display: flex">
-            <h4>My Certificate<b>:</b></h4>
-            <a
-              style="color: blue"
-              href="https://kommodo.ai/i/lmK6I89m7rjz7YQM3Yw1"
-              >https://kommodo.ai/i/lmK6I89m7rjz7YQM3Yw1</a
-            >
-          </li>
-        </ul>
+          <ul>
+            <li>Company: Creative IT Institute, Dhaka</li>
+            <li>
+              Cover Topics: HTML, CSS, JS, ES6, Bootstrap, Tailwind CSS, React JS,
+              Firebase, Figma, Node JS, Express JS, Mongo DB, Socket I/O,
+              E-commerce Project.
+            </li>
+            <li>Starting Date: 17/12/2023</li>
+            <li>Completion Date: 20/12/2024</li>
+            <li class="certificate-row">
+              <span>My Certificate:</span>
+              <a href="https://kommodo.ai/i/lmK6I89m7rjz7YQM3Yw1" target="_blank" rel="noreferrer">https://kommodo.ai/i/lmK6I89m7rjz7YQM3Yw1</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
       <div>
         <h2>My Academic Career:</h2>
         <hr />
-        <ul>
+        <div class="info-block">
           <h4>Bachelor of Business Administrations</h4>
-          <li>Institute: Kabi Nazrul Govt. COllege</li>
-          <li>Major: Management</li>
-          <li>4th Year (Running)</li>
-        </ul>
-        <ul>
+          <ul>
+            <li>Institute: Kabi Nazrul Govt. College</li>
+            <li>Major: Management</li>
+            <li>4th Year (Running)</li>
+          </ul>
+        </div>
+
+        <div class="info-block">
           <h4>Higher School Certificate (HSC)</h4>
-          <li>Institute: National Ideal College, Dhaka</li>
-          <li>Major: Commerce</li>
-          <li>CGPA: 4.67 out of 5.00, Passing year: 2021</li>
-        </ul>
-        <ul>
+          <ul>
+            <li>Institute: National Ideal College, Dhaka</li>
+            <li>Major: Commerce</li>
+            <li>CGPA: 4.67 out of 5.00, Passing year: 2021</li>
+          </ul>
+        </div>
+
+        <div class="info-block">
           <h4>Secondary School Certificate (SSC)</h4>
-          <li>Institute: National Ideal School & College, Dhaka</li>
-          <li>Major: Science</li>
-          <li>CGPA: 4.33 out of 5.00, Passing year: 2019</li>
-        </ul>
+          <ul>
+            <li>Institute: National Ideal School &amp; College, Dhaka</li>
+            <li>Major: Science</li>
+            <li>CGPA: 4.33 out of 5.00, Passing year: 2019</li>
+          </ul>
+        </div>
       </div>
+
       <div>
         <h2>My Personal Information:</h2>
         <hr />
         <ul>
-          <li>Father's Name: Md.Kabir Udding Chanchal,</li>
-          <li>DOB : 25-03-2004,</li>
-          <li>Gender: Male,</li>
-          <li>Religion : Islam,</li>
-          <li>Nationality: Bangladeshi,</li>
-          <li>NID : 7824608330,</li>
-          <li>Present Address: 24/22, Sona Mia Road , Manda , Dhaka-1214</li>
+          <li>Father's Name: Md. Kabir Uddin Chanchal</li>
+          <li>DOB: 25-03-2004</li>
+          <li>Gender: Male</li>
+          <li>Religion: Islam</li>
+          <li>Nationality: Bangladeshi</li>
+          <li>NID: 7824608330</li>
+          <li>Present Address: 24/22, Sona Mia Road, Manda, Dhaka-1214</li>
           <li>Permanent Address: same as Present Address</li>
         </ul>
       </div>
+
       <div>
         <h2>References:</h2>
         <hr />
         <ul>
           <li><h4>Wasim Mahamod Raza</h4></li>
-          <li>Faculty, Web & Software</li>
+          <li>Faculty, Web &amp; Software</li>
           <li>Creative IT Institute, Dhaka</li>
           <li>Email: wasim.cit.bd@gmail.com</li>
           <li>Phone: +88-01617194405</li>
         </ul>
       </div>
-    </container>
+    </div>
   </body>
 </html>

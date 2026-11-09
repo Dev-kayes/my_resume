@@ -25,6 +25,7 @@ h1 {
   justify-content: center;
   text-align: center;
   font-size: clamp(2rem, 5vw, 2.8rem);
+  margin-bottom: 14px;
 }
 
 ul {
@@ -37,19 +38,31 @@ li {
   align-items: flex-start;
   gap: 8px;
   flex-wrap: wrap;
-  margin-bottom: 4px;
-  word-break: break-word;
+  margin-bottom: 6px;
+  word-break: normal;
 }
 
 li i {
   flex-shrink: 0;
   margin-top: 2px;
+  color: #3a3a3a;
 }
 
-li a {
+li > a {
+  flex: 1 1 0;
+}
+
+li a,
+.project-link-row a,
+.certificate-row a {
   color: inherit;
   text-decoration: none;
   overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+a:hover {
+  opacity: 0.8;
 }
 
 div {
@@ -64,11 +77,12 @@ h2 {
 hr {
   color: rgb(140, 140, 232);
   border: solid 2px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 p {
   font-style: oblique;
+  line-height: 1.5;
 }
 
 .technical-skills {
@@ -97,6 +111,47 @@ p {
   font-weight: 700;
 }
 
+.project-group {
+  margin-top: 12px;
+}
+
+.project-item {
+  margin-top: 8px;
+  padding-left: 8px;
+}
+
+.project-link-row,
+.certificate-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.project-link-row > span,
+.certificate-row > span {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.project-link-row > a,
+.certificate-row > a {
+  flex: 1 1 0;
+}
+
+.project-list {
+  margin-top: 8px;
+  padding-left: 0;
+}
+
+.project-list li {
+  display: list-item;
+  list-style: disc;
+  margin-left: 22px;
+  padding-left: 4px;
+}
+
 #preview,
 #link {
   margin-left: 2px;
@@ -104,6 +159,29 @@ p {
   color: blue;
   text-decoration: underline;
   overflow-wrap: anywhere;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.125);
+  color: #ffffff9c;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
 }
 
 @media screen and (max-width: 600px) {
